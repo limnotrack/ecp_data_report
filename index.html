@@ -7727,10 +7727,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#sites" id="toc-sites" class="nav-link" data-scroll-target="#sites"><span class="header-section-number">1.1</span> Sites</a></li>
   </ul></li>
-  <li><a href="#alkalinity" id="toc-alkalinity" class="nav-link" data-scroll-target="#alkalinity"><span class="header-section-number">2</span> Alkalinity</a>
-  <ul class="collapse">
-  <li><a href="#pco2ph-equilibrium" id="toc-pco2ph-equilibrium" class="nav-link" data-scroll-target="#pco2ph-equilibrium"><span class="header-section-number">2.1</span> pCO<sub>2</sub>–pH Equilibrium</a></li>
-  </ul></li>
+  <li><a href="#alkalinity" id="toc-alkalinity" class="nav-link" data-scroll-target="#alkalinity"><span class="header-section-number">2</span> Alkalinity</a></li>
   <li><a href="#instrumentation" id="toc-instrumentation" class="nav-link" data-scroll-target="#instrumentation"><span class="header-section-number">3</span> Instrumentation</a>
   <ul class="collapse">
   <li><a href="#data-period" id="toc-data-period" class="nav-link" data-scroll-target="#data-period"><span class="header-section-number">3.1</span> Data Period</a></li>
@@ -7743,17 +7740,17 @@ window.Quarto = {
   <li><a href="#fdom" id="toc-fdom" class="nav-link" data-scroll-target="#fdom"><span class="header-section-number">3.8</span> fDOM</a></li>
   <li><a href="#chlorophyll-and-phycocyanin" id="toc-chlorophyll-and-phycocyanin" class="nav-link" data-scroll-target="#chlorophyll-and-phycocyanin"><span class="header-section-number">3.9</span> Chlorophyll and Phycocyanin</a></li>
   <li><a href="#turbidity" id="toc-turbidity" class="nav-link" data-scroll-target="#turbidity"><span class="header-section-number">3.10</span> Turbidity</a></li>
-  <li><a href="#karapiro-profiler" id="toc-karapiro-profiler" class="nav-link" data-scroll-target="#karapiro-profiler"><span class="header-section-number">3.11</span> Karapiro Profiler</a>
+  </ul></li>
+  <li><a href="#karapiro-profiler" id="toc-karapiro-profiler" class="nav-link" data-scroll-target="#karapiro-profiler"><span class="header-section-number">4</span> Karapiro Profiler</a>
   <ul class="collapse">
   <li><a href="#profiling-pco2-timing-and-equilibration" id="toc-profiling-pco2-timing-and-equilibration" class="nav-link" data-scroll-target="#profiling-pco2-timing-and-equilibration">Profiling pCO<sub>2</sub>: timing and equilibration</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#summary-and-recommendations" id="toc-summary-and-recommendations" class="nav-link" data-scroll-target="#summary-and-recommendations"><span class="header-section-number">4</span> Summary and Recommendations</a>
+  <li><a href="#summary-and-recommendations" id="toc-summary-and-recommendations" class="nav-link" data-scroll-target="#summary-and-recommendations"><span class="header-section-number">5</span> Summary and Recommendations</a>
   <ul class="collapse">
   <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">Recommendations</a></li>
   </ul></li>
   
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">6</span> Acknowledgements</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">7</span> Acknowledgements</a></li>
   </ul>
 </nav>
 </div>
@@ -7818,7 +7815,7 @@ window.Quarto = {
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
 <p>This report documents the quality control and analysis of continuous water quality monitoring data from four sites on the Waikato River, New Zealand, deployed as part of the MBIE Endeavour programme “Safeguarding Te Mana o te Awa o Waikato from Emerging Climatic Pressures”.</p>
 <p>Limnotrack was engaged by Lincoln Agritech to supply multiprobe instrumentation for three river sites (Aniwaniwa, Cambridge, and Mystery Creek) and a mobile GPS-referenced instrument. Lincoln Agritech rents a profiling buoy from Limnotrack for the Lake Karapiro site. Limnotrack also provides telemetry, data management, and a web application for real-time data access across all four sites. Limnotrack was not specifically engaged or funded to undertake field maintenance, quality assurance, or quality control of the sensor data; however, Limnotrack has contributed in-kind effort in these areas to support the quality of the data and to stand behind the equipment supplied.</p>
-<p>This report characterises dissolved CO<sub>2</sub> dynamics and assesses pH measurement quality using pCO<sub>2</sub> as an independent reference.</p>
+<p>This report summarises the data collection to date, documents the quality control process and operations applied, assesses pH measurement quality using pCO<sub>2</sub> as an independent reference, characterises the profiler sampling regime, and makes recommendations to maximise data quality and usability going forward.</p>
 <section id="sites" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="sites"><span class="header-section-number">1.1</span> Sites</h2>
 <p>The four sites span a ~50 km reach of the Waikato River, from Lake Karapiro downstream to Mystery Creek:</p>
@@ -7867,8 +7864,8 @@ window.Quarto = {
 <div id="fig-site-map" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-site-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="htmlwidget-e79c65fee1b8ce694dab" style="width:100%;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e79c65fee1b8ce694dab">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"scrollWheelZoom":false},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[-37.9264,-37.952,-37.8983,-37.8716],[175.5451,175.657,175.4921,175.358],{"iconUrl":{"data":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA4MiIgd2lkdGg9IjY0IiBoZWlnaHQ9IjgyIj4KICA8ZGVmcz4KICAgIDwhLS0gZmFkZSByZWZsZWN0aW9uIHdpdGggZGVwdGggLS0+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InJlZmxGYWRlIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAiIHkxPSI0NyIgeDI9IjAiIHkyPSI3OCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPG1hc2sgaWQ9ImZhZGUiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI4MiI+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI4MiIgZmlsbD0idXJsKCNyZWZsRmFkZSkiLz4KICAgIDwvbWFzaz4KICAgIDwhLS0gb25seSByZW5kZXIgcmVmbGVjdGlvbiBiZWxvdyB0aGUgd2F0ZXIgc3VyZmFjZSAtLT4KICAgIDxjbGlwUGF0aCBpZD0iYmVsb3ciPgogICAgICA8cGF0aCBkPSJNMCw0My42IEMxMyw0MyAyMCw0NS4yIDI3LDQ2LjcgQzM0LDQ4LjIgNDksNDkuNCA2NCw0OC44IEw2NCw4MiBMMCw4MiBaIi8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KCiAgPCEtLSA9PT09PSByZWZsZWN0aW9uOiB0cnVlIG1pcnJvciBhY3Jvc3MgdGhlIHRpbHRlZCB3YXRlciBwbGFuZSAoMTLCsCkgdGhyb3VnaCB0aGUgY29udGFjdCBwb2ludCwgdmVydGljYWxseSBjb21wcmVzc2VkIDAuODIgZm9yIHJpcHBsZSBmb3Jlc2hvcnRlbmluZyA9PT09PSAtLT4KICA8ZyBjbGlwLXBhdGg9InVybCgjYmVsb3cpIiBtYXNrPSJ1cmwoI2ZhZGUpIiBvcGFjaXR5PSIwLjM4IgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3LDQ2LjcpIHJvdGF0ZSgxMikgc2NhbGUoMSwtMC44Mikgcm90YXRlKC0xMikgdHJhbnNsYXRlKC0yNywtNDYuNykiPgogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoMTIsMjcsNDYuNykiPgogICAgICA8cmVjdCB4PSIyMy43NSIgeT0iNiIgd2lkdGg9IjYuNSIgaGVpZ2h0PSI1LjUiIHJ4PSIxLjIiIGZpbGw9IiNFRkM5OEMiLz4KICAgICAgPHJlY3QgeD0iMjUiIHk9IjEwIiB3aWR0aD0iNCIgaGVpZ2h0PSIyMiIgcng9IjEuMiIgZmlsbD0iI0VGQzk4QyIvPgogICAgICA8cGF0aCBkPSJNMTYuNSw0NSBMMTkuNSwzNC41IEwyMy41LDMxIEwzMC41LDMxIEwzNC41LDM0LjUgTDM3LjUsNDUgWiIgZmlsbD0iI0YwOTQxRSIvPgogICAgICA8cmVjdCB4PSIxNS41IiB5PSI0NSIgd2lkdGg9IjIzIiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiNFRkM5OEMiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0gPT09PT0gYnVveSwgYXhpcyBub3JtYWwgdG8gbG9jYWwgd2F2ZSB0YW5nZW50IChzdXJmYWNlIHNsb3BlIH4xMsKwIGF0IGNvbnRhY3QpID09PT09IC0tPgogIDxnIHRyYW5zZm9ybT0icm90YXRlKDEyLDI3LDQ2LjcpIj4KICAgIDwhLS0ga2VlbCAoc3VibWVyZ2VkKSAtLT4KICAgIDxwYXRoIGQ9Ik0yMSw0OC41IEwyMyw1OCBMMzEsNTggTDMzLDQ4LjUgWiIgZmlsbD0iI0VGQzk4QyIgb3BhY2l0eT0iMC41NSIvPgogICAgPCEtLSBmbG90YXRpb24gY29sbGFyIGF0IHdhdGVybGluZSAtLT4KICAgIDxyZWN0IHg9IjE1LjUiIHk9IjQ1IiB3aWR0aD0iMjMiIGhlaWdodD0iMy41IiByeD0iMSIgZmlsbD0iI0VGQzk4QyIvPgogICAgPCEtLSBib2R5IC0tPgogICAgPHBhdGggZD0iTTE2LjUsNDUgTDE5LjUsMzQuNSBMMjMuNSwzMSBMMzAuNSwzMSBMMzQuNSwzNC41IEwzNy41LDQ1IFoiIGZpbGw9IiNGMDk0MUUiLz4KICAgIDwhLS0gbWFzdCAtLT4KICAgIDxyZWN0IHg9IjI1IiB5PSIxMCIgd2lkdGg9IjQiIGhlaWdodD0iMjIiIHJ4PSIxLjIiIGZpbGw9IiNFRkM5OEMiLz4KICAgIDwhLS0gbWFzdCBoZWFkIC0tPgogICAgPHJlY3QgeD0iMjMuNzUiIHk9IjYiIHdpZHRoPSI2LjUiIGhlaWdodD0iNS41IiByeD0iMS4yIiBmaWxsPSIjRUZDOThDIi8+CiAgPC9nPgoKICA8IS0tID09PT09IHdhdGVyIHN1cmZhY2UgPT09PT0gLS0+CiAgPHBhdGggZD0iTTEsNDMuNSBDMTMsNDMgMjAsNDUuMiAyNyw0Ni43IEMzNCw0OC4yIDQ5LDQ5LjQgNjMsNDguOCIKICAgICAgICBzdHJva2U9IiM2RkE4RDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjg1Ii8+CiAgPHBhdGggZD0iTTYsNTMgQzE2LDUxLjggMjQsNTMuNiAzMyw1NC42IEM0Miw1NS42IDUyLDU1LjIgNTksNTQuNCIKICAgICAgICBzdHJva2U9IiM2RkE4RDYiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuMzUiLz4KCiAgPCEtLSByaXBwbGUgYnJlYWtzIGFjcm9zcyB0aGUgcmVmbGVjdGlvbiAtLT4KICA8cGF0aCBkPSJNMjAsNTguNSBoOSBNMzEsNjQgaDciIHN0cm9rZT0iIzZGQThENiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo=","index":0},"iconWidth":36,"iconHeight":56},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<b>karapiro<\/b><br>mid-lake<br>Lake Karapiro","<b>aniwaniwa<\/b><br>aniwaniwa reserve<br>Waikato River","<b>cambridge<\/b><br>golf course<br>Waikato River","<b>mysterycreek<\/b><br>mystery creek jetty<br>Waikato River"],null,null,null,["Karapiro","Aniwaniwa","Cambridge","Mysterycreek"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-37.952,-37.8716],"lng":[175.358,175.657]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-19763a9dc2ea7d5db851" style="width:100%;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-19763a9dc2ea7d5db851">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"scrollWheelZoom":false},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[-37.9264,-37.952,-37.8983,-37.8716],[175.5451,175.657,175.4921,175.358],{"iconUrl":{"data":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA4MiIgd2lkdGg9IjY0IiBoZWlnaHQ9IjgyIj4KICA8ZGVmcz4KICAgIDwhLS0gZmFkZSByZWZsZWN0aW9uIHdpdGggZGVwdGggLS0+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InJlZmxGYWRlIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAiIHkxPSI0NyIgeDI9IjAiIHkyPSI3OCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPG1hc2sgaWQ9ImZhZGUiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI4MiI+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI4MiIgZmlsbD0idXJsKCNyZWZsRmFkZSkiLz4KICAgIDwvbWFzaz4KICAgIDwhLS0gb25seSByZW5kZXIgcmVmbGVjdGlvbiBiZWxvdyB0aGUgd2F0ZXIgc3VyZmFjZSAtLT4KICAgIDxjbGlwUGF0aCBpZD0iYmVsb3ciPgogICAgICA8cGF0aCBkPSJNMCw0My42IEMxMyw0MyAyMCw0NS4yIDI3LDQ2LjcgQzM0LDQ4LjIgNDksNDkuNCA2NCw0OC44IEw2NCw4MiBMMCw4MiBaIi8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KCiAgPCEtLSA9PT09PSByZWZsZWN0aW9uOiB0cnVlIG1pcnJvciBhY3Jvc3MgdGhlIHRpbHRlZCB3YXRlciBwbGFuZSAoMTLCsCkgdGhyb3VnaCB0aGUgY29udGFjdCBwb2ludCwgdmVydGljYWxseSBjb21wcmVzc2VkIDAuODIgZm9yIHJpcHBsZSBmb3Jlc2hvcnRlbmluZyA9PT09PSAtLT4KICA8ZyBjbGlwLXBhdGg9InVybCgjYmVsb3cpIiBtYXNrPSJ1cmwoI2ZhZGUpIiBvcGFjaXR5PSIwLjM4IgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3LDQ2LjcpIHJvdGF0ZSgxMikgc2NhbGUoMSwtMC44Mikgcm90YXRlKC0xMikgdHJhbnNsYXRlKC0yNywtNDYuNykiPgogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoMTIsMjcsNDYuNykiPgogICAgICA8cmVjdCB4PSIyMy43NSIgeT0iNiIgd2lkdGg9IjYuNSIgaGVpZ2h0PSI1LjUiIHJ4PSIxLjIiIGZpbGw9IiNFRkM5OEMiLz4KICAgICAgPHJlY3QgeD0iMjUiIHk9IjEwIiB3aWR0aD0iNCIgaGVpZ2h0PSIyMiIgcng9IjEuMiIgZmlsbD0iI0VGQzk4QyIvPgogICAgICA8cGF0aCBkPSJNMTYuNSw0NSBMMTkuNSwzNC41IEwyMy41LDMxIEwzMC41LDMxIEwzNC41LDM0LjUgTDM3LjUsNDUgWiIgZmlsbD0iI0YwOTQxRSIvPgogICAgICA8cmVjdCB4PSIxNS41IiB5PSI0NSIgd2lkdGg9IjIzIiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiNFRkM5OEMiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0gPT09PT0gYnVveSwgYXhpcyBub3JtYWwgdG8gbG9jYWwgd2F2ZSB0YW5nZW50IChzdXJmYWNlIHNsb3BlIH4xMsKwIGF0IGNvbnRhY3QpID09PT09IC0tPgogIDxnIHRyYW5zZm9ybT0icm90YXRlKDEyLDI3LDQ2LjcpIj4KICAgIDwhLS0ga2VlbCAoc3VibWVyZ2VkKSAtLT4KICAgIDxwYXRoIGQ9Ik0yMSw0OC41IEwyMyw1OCBMMzEsNTggTDMzLDQ4LjUgWiIgZmlsbD0iI0VGQzk4QyIgb3BhY2l0eT0iMC41NSIvPgogICAgPCEtLSBmbG90YXRpb24gY29sbGFyIGF0IHdhdGVybGluZSAtLT4KICAgIDxyZWN0IHg9IjE1LjUiIHk9IjQ1IiB3aWR0aD0iMjMiIGhlaWdodD0iMy41IiByeD0iMSIgZmlsbD0iI0VGQzk4QyIvPgogICAgPCEtLSBib2R5IC0tPgogICAgPHBhdGggZD0iTTE2LjUsNDUgTDE5LjUsMzQuNSBMMjMuNSwzMSBMMzAuNSwzMSBMMzQuNSwzNC41IEwzNy41LDQ1IFoiIGZpbGw9IiNGMDk0MUUiLz4KICAgIDwhLS0gbWFzdCAtLT4KICAgIDxyZWN0IHg9IjI1IiB5PSIxMCIgd2lkdGg9IjQiIGhlaWdodD0iMjIiIHJ4PSIxLjIiIGZpbGw9IiNFRkM5OEMiLz4KICAgIDwhLS0gbWFzdCBoZWFkIC0tPgogICAgPHJlY3QgeD0iMjMuNzUiIHk9IjYiIHdpZHRoPSI2LjUiIGhlaWdodD0iNS41IiByeD0iMS4yIiBmaWxsPSIjRUZDOThDIi8+CiAgPC9nPgoKICA8IS0tID09PT09IHdhdGVyIHN1cmZhY2UgPT09PT0gLS0+CiAgPHBhdGggZD0iTTEsNDMuNSBDMTMsNDMgMjAsNDUuMiAyNyw0Ni43IEMzNCw0OC4yIDQ5LDQ5LjQgNjMsNDguOCIKICAgICAgICBzdHJva2U9IiM2RkE4RDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjg1Ii8+CiAgPHBhdGggZD0iTTYsNTMgQzE2LDUxLjggMjQsNTMuNiAzMyw1NC42IEM0Miw1NS42IDUyLDU1LjIgNTksNTQuNCIKICAgICAgICBzdHJva2U9IiM2RkE4RDYiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuMzUiLz4KCiAgPCEtLSByaXBwbGUgYnJlYWtzIGFjcm9zcyB0aGUgcmVmbGVjdGlvbiAtLT4KICA8cGF0aCBkPSJNMjAsNTguNSBoOSBNMzEsNjQgaDciIHN0cm9rZT0iIzZGQThENiIgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo=","index":0},"iconWidth":36,"iconHeight":56},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<b>karapiro<\/b><br>mid-lake<br>Lake Karapiro","<b>aniwaniwa<\/b><br>aniwaniwa reserve<br>Waikato River","<b>cambridge<\/b><br>golf course<br>Waikato River","<b>mysterycreek<\/b><br>mystery creek jetty<br>Waikato River"],null,null,null,["Karapiro","Aniwaniwa","Cambridge","Mysterycreek"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-37.952,-37.8716],"lng":[175.358,175.657]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-site-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure 1: Monitoring site locations on the Waikato River.
@@ -7905,61 +7902,6 @@ Figure 2: Measured alkalinity at the four sonde sites. Error bars show standard
 <p>A daily alkalinity time series was constructed by linear interpolation between sampling dates, with extrapolation using the site mean outside the observation window.</p>
 <p>There is a suggestion of a declining alkalinity trend over the two-year record, particularly at the downstream sites. This may be related to changes in catchment inputs or biological uptake — the expansion of freshwater clam populations in the Waikato River could contribute to alkalinity drawdown through shell formation (CaCO<sub>3</sub> precipitation), though this has not been confirmed.</p>
 <p><strong>Recommendation</strong>: Continue fortnightly sampling.</p>
-<section id="pco2ph-equilibrium" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="pco2ph-equilibrium"><span class="header-section-number">2.1</span> pCO<sub>2</sub>–pH Equilibrium</h2>
-<p>The carbonate equilibrium model relates dissolved CO<sub>2</sub>, pH, temperature, and alkalinity through the following system.</p>
-<p><strong>Dissolved CO<sub>2</sub> from pCO<sub>2</sub>:</strong> <span class="math display">\[[\text{CO}_2] = p\text{CO}_2 \times K_H\]</span></p>
-<p><strong>Carbonate alkalinity balance:</strong> <span class="math display">\[\text{Alk} = \frac{K_1 [\text{CO}_2]}{[\text{H}^+]} + \frac{2 K_1 K_2 [\text{CO}_2]}{[\text{H}^+]^2} + \frac{K_w}{[\text{H}^+]} - [\text{H}^+]\]</span></p>
-<p><strong>Solving for [CO<sub>2</sub>] from pH and alkalinity:</strong> <span class="math display">\[[\text{CO}_2] = \frac{\text{Alk} - K_w/[\text{H}^+] + [\text{H}^+]}{K_1/[\text{H}^+] + 2 K_1 K_2/[\text{H}^+]^2}\]</span></p>
-<p><strong>Then:</strong> <span class="math inline">\(p\text{CO}_2 = [\text{CO}_2] / K_H\)</span></p>
-<p>For pH estimation from pCO<sub>2</sub>, the alkalinity balance is solved numerically for [H<sup>+</sup>].</p>
-<p>Temperature-dependent equilibrium constants (all at zero ionic strength, <span class="math inline">\(T\)</span> in Kelvin):</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 34%">
-<col style="width: 34%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Constant</th>
-<th>Expression</th>
-<th>Reference</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(pK_1\)</span></td>
-<td><span class="math inline">\(3404.71/T + 0.032786 T - 14.8435\)</span></td>
-<td>Harned &amp; Davis (1943)</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(pK_2\)</span></td>
-<td><span class="math inline">\(2902.39/T + 0.02379 T - 6.4980\)</span></td>
-<td>Harned &amp; Scholes (1941)</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(pK_w\)</span></td>
-<td><span class="math inline">\(4471.33/T + 0.01706 T - 6.0846\)</span></td>
-<td>Harned &amp; Hamer (1933)</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(\ln K_H\)</span></td>
-<td><span class="math inline">\(-58.0931 + 90.5069 \times 100/T + 22.294 \ln(T/100)\)</span></td>
-<td>Weiss (1974)</td>
-</tr>
-</tbody>
-</table>
-<p>These zero-ionic-strength constants are appropriate for the Waikato River’s low ionic strength (~0.001–0.002 M). At 25°C the constants evaluate to: <span class="math inline">\(pK_1 = 6.35\)</span>, <span class="math inline">\(pK_2 = 10.33\)</span>, <span class="math inline">\(pK_w = 14.00\)</span>, <span class="math inline">\(K_H = 0.034\)</span> mol L<sup>-1</sup> atm<sup>-1</sup>, consistent with published values.</p>
-<p>Alkalinity is converted from mg/L as CaCO<sub>3</sub> to equivalents: <span class="math inline">\(\text{Alk (eq/L)} = \text{Alk (mg/L)} / 50000\)</span>.</p>
-<p>Results were validated against the <code>seacarb</code> R package (Gattuso et al., 2024; <code>w14</code> constants) and <code>AquaEnv</code> — agreement within 0.3% for pCO<sub>2</sub> and 0.001 pH across the full measurement range.</p>
-<p><strong>Sensitivity analysis</strong>:</p>
-<ul>
-<li>Alkalinity ±2 mg/L → pCO<sub>2</sub> change &lt;2% → pH change &lt;0.01</li>
-<li>Temperature ±0.5°C → pH change &lt;0.005</li>
-</ul>
-<p>The carbonate equilibrium calculations are insensitive to the measurement uncertainties in alkalinity and temperature. pH electrode drift is by far the dominant error source in the pH estimates.</p>
-</section>
 </section>
 <section id="instrumentation" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Instrumentation</h1>
@@ -8039,6 +7981,61 @@ Figure 5: pCO2 sensor device timeline showing probe assignments and QC periods 
 <section id="ph" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="ph"><span class="header-section-number">3.3</span> pH</h2>
 <p>pH measurement is the most challenging variable in the network, with systematic electrode drift at all sites. We derive pH from three independent approaches and compare them.</p>
+<section id="pco2ph-equilibrium" class="level4">
+<h4 class="anchored" data-anchor-id="pco2ph-equilibrium">pCO<sub>2</sub>–pH Equilibrium</h4>
+<p>The carbonate equilibrium model relates dissolved CO<sub>2</sub>, pH, temperature, and alkalinity through the following system.</p>
+<p><strong>Dissolved CO<sub>2</sub> from pCO<sub>2</sub>:</strong> <span class="math display">\[[\text{CO}_2] = p\text{CO}_2 \times K_H\]</span></p>
+<p><strong>Carbonate alkalinity balance:</strong> <span class="math display">\[\text{Alk} = \frac{K_1 [\text{CO}_2]}{[\text{H}^+]} + \frac{2 K_1 K_2 [\text{CO}_2]}{[\text{H}^+]^2} + \frac{K_w}{[\text{H}^+]} - [\text{H}^+]\]</span></p>
+<p><strong>Solving for [CO<sub>2</sub>] from pH and alkalinity:</strong> <span class="math display">\[[\text{CO}_2] = \frac{\text{Alk} - K_w/[\text{H}^+] + [\text{H}^+]}{K_1/[\text{H}^+] + 2 K_1 K_2/[\text{H}^+]^2}\]</span></p>
+<p><strong>Then:</strong> <span class="math inline">\(p\text{CO}_2 = [\text{CO}_2] / K_H\)</span></p>
+<p>For pH estimation from pCO<sub>2</sub>, the alkalinity balance is solved numerically for [H<sup>+</sup>].</p>
+<p>Temperature-dependent equilibrium constants (all at zero ionic strength, <span class="math inline">\(T\)</span> in Kelvin):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 34%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Constant</th>
+<th>Expression</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(pK_1\)</span></td>
+<td><span class="math inline">\(3404.71/T + 0.032786 T - 14.8435\)</span></td>
+<td>Harned &amp; Davis (1943)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(pK_2\)</span></td>
+<td><span class="math inline">\(2902.39/T + 0.02379 T - 6.4980\)</span></td>
+<td>Harned &amp; Scholes (1941)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(pK_w\)</span></td>
+<td><span class="math inline">\(4471.33/T + 0.01706 T - 6.0846\)</span></td>
+<td>Harned &amp; Hamer (1933)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\ln K_H\)</span></td>
+<td><span class="math inline">\(-58.0931 + 90.5069 \times 100/T + 22.294 \ln(T/100)\)</span></td>
+<td>Weiss (1974)</td>
+</tr>
+</tbody>
+</table>
+<p>These zero-ionic-strength constants are appropriate for the Waikato River’s low ionic strength (~0.001–0.002 M). At 25°C the constants evaluate to: <span class="math inline">\(pK_1 = 6.35\)</span>, <span class="math inline">\(pK_2 = 10.33\)</span>, <span class="math inline">\(pK_w = 14.00\)</span>, <span class="math inline">\(K_H = 0.034\)</span> mol L<sup>-1</sup> atm<sup>-1</sup>, consistent with published values.</p>
+<p>Alkalinity is converted from mg/L as CaCO<sub>3</sub> to equivalents: <span class="math inline">\(\text{Alk (eq/L)} = \text{Alk (mg/L)} / 50000\)</span>.</p>
+<p>Results were validated against the <code>seacarb</code> R package (Gattuso et al., 2024; <code>w14</code> constants) and <code>AquaEnv</code> — agreement within 0.3% for pCO<sub>2</sub> and 0.001 pH across the full measurement range.</p>
+<p><strong>Sensitivity analysis</strong>:</p>
+<ul>
+<li>Alkalinity ±2 mg/L → pCO<sub>2</sub> change &lt;2% → pH change &lt;0.01</li>
+<li>Temperature ±0.5°C → pH change &lt;0.005</li>
+</ul>
+<p>The carbonate equilibrium calculations are insensitive to the measurement uncertainties in alkalinity and temperature. pH electrode drift is by far the dominant error source in the pH estimates.</p>
+</section>
 <section id="ph-estimates" class="level4">
 <h4 class="anchored" data-anchor-id="ph-estimates">pH Estimates</h4>
 <p>Three pH estimates are produced:</p>
@@ -8464,8 +8461,9 @@ Figure 20: Daily median turbidity at all sites.
 </ul>
 <p><strong>Recommendation</strong>: Perform a one-off low-value turbidity calibration of all sensors together (0, 1, 5, 10 FNU standards) to establish inter-comparability. Consider a shielded 90° nephelometer (e.g., Seapoint Turbidity Meter) if turbidity is a priority measurement.</p>
 </section>
-<section id="karapiro-profiler" class="level2" data-number="3.11">
-<h2 data-number="3.11" class="anchored" data-anchor-id="karapiro-profiler"><span class="header-section-number">3.11</span> Karapiro Profiler</h2>
+</section>
+<section id="karapiro-profiler" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Karapiro Profiler</h1>
 <p>The Karapiro profiling buoy (<a href="#fig-profiler-gif" class="quarto-xref">Figure 21</a>) cycles a multiprobe through the water column, stopping at fixed depths to collect measurements. The current sampling regime is summarised in <a href="#tbl-profiler-regime" class="quarto-xref">Table 2</a>.</p>
 <div id="fig-profiler-gif" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -8577,9 +8575,8 @@ Figure 23: Within-stop pCO2 range by depth. Each box summarises the range of th
 <p><strong>Recommendation</strong>: The current regime appears adequate for characterising the pCO<sub>2</sub> depth profile given the moderate vertical gradients in Karapiro. The surface stop (1 m) experiences the largest pCO<sub>2</sub> step change (from ~24.5 m at the end of the previous profile), so equilibration confidence is lowest there. If higher confidence is needed, consider periodically running a validation profile with extended dwell times (e.g., 30 min per stop) to compare against the standard regime. Weed raft interference in the top 2 m should be noted in field logs when observed.</p>
 </section>
 </section>
-</section>
-<section id="summary-and-recommendations" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Summary and Recommendations</h1>
+<section id="summary-and-recommendations" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Summary and Recommendations</h1>
 <div class="cell">
 <div id="tbl-summary" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -8685,19 +8682,19 @@ Table 3: Data quality summary by variable and site.
 </div>
 <section id="recommendations" class="level3">
 <h3 class="anchored" data-anchor-id="recommendations">Recommendations</h3>
-<p>Priority items are shown in italics.</p>
+<p>Priority items are highlighted.</p>
 <p><strong>pH</strong></p>
 <ul>
-<li><em>Replace pH electrode front-ends at all sites — current electrodes have exceeded useful life</em></li>
-<li><em>Pre-soak new pH electrodes before deployment (24–48 h in pH 4 buffer); thereafter store wet if removed temporarily</em></li>
-<li><em>Use pCO<sub>2</sub>-derived pH as the primary pH estimate</em></li>
+<li><span style="color: #12394F;">Replace pH electrode front-ends at all sites — current electrodes have exceeded useful life</span></li>
+<li><span style="color: #12394F;">Pre-soak new pH electrodes before deployment (24–48 h in pH 4 buffer); thereafter store wet if removed temporarily</span></li>
+<li><span style="color: #12394F;">Use pCO<sub>2</sub>-derived pH as the primary pH estimate</span></li>
 <li>Perform reference checks with a calibrated field meter at least monthly</li>
 <li>Record buffer stabilisation time regularly as a cartridge health indicator</li>
 <li>Consider alternative sensor architectures (liquid junction or solid-state) for future deployments</li>
 </ul>
 <p><strong>pCO<sub>2</sub></strong></p>
 <ul>
-<li><em>Maintain current 2-weekly maintenance schedule; inspect and clean (where possible) membranes at each visit</em></li>
+<li><span style="color: #12394F;">Maintain current 2-weekly maintenance schedule; inspect and clean (where possible) membranes at each visit</span></li>
 <li>Ensure calibration coefficients are updated in the logger when probes are swapped</li>
 </ul>
 <p><strong>Temperature</strong></p>
@@ -8711,15 +8708,15 @@ Table 3: Data quality summary by variable and site.
 </ul>
 <p><strong>Specific Conductivity</strong></p>
 <ul>
-<li><em>Check conductivity sensor calibration at all river sites</em></li>
+<li><span style="color: #12394F;">Check conductivity sensor calibration at all river sites</span></li>
 <li>Regular cleaning of the conductivity cell slot</li>
 </ul>
 <p><strong>Fluorescence (Tryptophan, fDOM, Chlorophyll, Phycocyanin)</strong></p>
 <ul>
-<li><em>Clean all optical sensors (TriLux, C-FLUOR) at every site visit, regardless of visual appearance, with a soft cloth and taking care not to introduce marks or abrasion</em></li>
+<li><span style="color: #12394F;">Clean all optical sensors (TriLux, C-FLUOR) at every site visit, regardless of visual appearance, with a soft cloth and taking care not to introduce marks or abrasion</span></li>
 <li>Log cleaning dates precisely to support QC excision</li>
 <li>Collect extractive chlorophyll-a samples (acetone extraction) to calibrate RFU to µg/L</li>
-<li><em>At Cambridge, swap the fDOM sensor with the mobile probe’s unit to determine if the fault is sensor- or system-level</em></li>
+<li><span style="color: #12394F;">At Cambridge, swap the fDOM sensor with the mobile probe’s unit to determine if the fault is sensor- or system-level</span></li>
 <li>Consider higher-sensitivity fluorometers if tryptophan dynamics are a primary objective</li>
 </ul>
 <p><strong>Turbidity</strong></p>
@@ -8733,14 +8730,14 @@ Table 3: Data quality summary by variable and site.
 </ul>
 <p><strong>General</strong></p>
 <ul>
-<li><em>Keep thorough field notes — document sensor swaps, fouling observations, membrane replacements, field pH validations, cleaning actions, and any anomalies at each visit</em></li>
-<li><em>Increase visit frequency to the Mystery Creek site to maintain sensor performance</em></li>
+<li><span style="color: #12394F;">Keep thorough field notes — document sensor swaps, fouling observations, membrane replacements, field pH validations, cleaning actions, and any anomalies at each visit</span></li>
+<li><span style="color: #12394F;">Increase visit frequency to the Mystery Creek site to maintain sensor performance</span></li>
 </ul>
 </section>
 </section>
 
-<section id="acknowledgements" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Acknowledgements</h1>
+<section id="acknowledgements" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Acknowledgements</h1>
 <p>This work was funded by the MBIE Endeavour Fund programme “Safeguarding Te Mana o te Awa o Waikato from Emerging Climatic Pressures”, led by Adam Hartland (Lincoln Agritech). Juliet Clague (Lincoln Agritech) provided the alkalinity raw data. Installation and fieldwork were undertaken by JFB Enviro, Brian Moorhead (Lincoln Agritech), and Juliet Clague.</p>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
@@ -8754,7 +8751,7 @@ Table 3: Data quality summary by variable and site.
 </div>
 </section>
 
-<div id="quarto-appendix" class="default"><section id="appendix-per-site-qc-scatter-plots" class="level1 appendix" data-number="5"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">5</span> Appendix: Per-Site QC Scatter Plots</h2><div class="quarto-appendix-contents">
+<div id="quarto-appendix" class="default"><section id="appendix-per-site-qc-scatter-plots" class="level1 appendix" data-number="6"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">6</span> Appendix: Per-Site QC Scatter Plots</h2><div class="quarto-appendix-contents">
 
 <p>Raw data (grey) and QC’d data (colour) for all variables at each site.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
